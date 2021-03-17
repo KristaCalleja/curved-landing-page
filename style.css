@@ -75,6 +75,7 @@ a:last-of-type{
 .grow, .users{
     background: hsl(207, 100%, 98%);
 }
+
 div b {
     font-weight: 700;
     font-size: 28px;
