@@ -58,21 +58,21 @@ a:last-of-type{
     width: 80%;
 }
 
-.grid{
+.values{
     padding: 120px 0;
     display: flex;
 }
 
-.grid h2{
+.values h2{
     font-size: 5.8em;
     font-weight: 700;
 }
 
-.grid + p {
+.values + p {
     color: red;
 }
 
-.grow, .users{
+.boxes:nth-child(2n){
     background: hsl(207, 100%, 98%);
 }
 
