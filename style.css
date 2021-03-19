@@ -72,13 +72,16 @@ a:last-of-type{
     color: red;
 }
 
+.container:first-child{
+    /* position: absolute; */
+    border: 1px red solid;
+}
+
 .grid-boxes{
-    border: 1px solid black;
     display:flex;
     flex-direction: column;
 }
 .box{
-    border: 1px red solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -86,15 +89,19 @@ a:last-of-type{
     padding: 20px 35px;
 }
 
+.grid-boxes div:nth-child(2n - 1){
+    background: hsl(207, 100%, 98%);
+}
+
+.box .excluded{
+    background: none;
+}
+
 .box-text{
     padding: 210px 80px;
 }
 .box-illustration img{
     width: 100%;
-}
-
-.box:first-child{
-    background: hsl(207, 100%, 98%);
 }
 
 footer{
