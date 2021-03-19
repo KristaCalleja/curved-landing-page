@@ -72,26 +72,31 @@ a:last-of-type{
     color: red;
 }
 
-.boxes:nth-child(2n){
+.grid-boxes{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+}
+.box{
+    border: 1px red solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 32em;
+    padding: 20px 35px;
+}
+
+.box-text{
+    padding: 210px 80px;
+}
+.box-illustration img{
+    width: 100%;
+}
+
+.box:first-child{
     background: hsl(207, 100%, 98%);
 }
 
-div b {
-    font-weight: 700;
-    font-size: 28px;
-}
-.users::after{
-    content: url(images/);
-
-}
-
-
-.grow{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: hsl(207, 100%, 98%);
-
-}
 footer{
     margin: auto;
 }
