@@ -101,33 +101,29 @@ h1:first-of-type{
 }
 
 /* Alternate layout */
-.alterate-layout{
-    /* position: absolute; */
-    border: 1px red solid;
-}
 .grid-boxes{
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
 }
-
 .box{
+    border: 1px purple solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 32em;
+    align-items: center;
     padding: 20px 35px;
 }
-
 .box-shaded{
     background: hsl(207, 100%, 98%);
 }
-
 .box-text{
+    border: 1px violet solid;
     padding: 210px 80px;
 }
 .box-illustration img{
     width: 100%;
 }
+
 
 footer{
     margin: auto;
@@ -155,5 +151,12 @@ footer{
     }
     .split{
         flex-direction: column;
+    }
+    .box{
+        flex-direction: column;
+        padding: 0;
+    }
+    .box-text{
+        order: 1;
     }
 }
