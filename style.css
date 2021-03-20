@@ -14,6 +14,16 @@ ul, li a{
     border: 2px red dotted;
     width: min(90%, 70.5rem);
 }
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar */
 .navbar{
     border: 1px black solid;
     padding: 50px 40px;
@@ -35,20 +45,9 @@ a:only-child{
     float: right;
     letter-spacing: .09em;
 }
-
 a:only-child:hover{
     border: 2px hsl(321, 100%, 78%) solid;
     color: hsl(321, 100%, 78%);
-}
-
-h1{
-    font-size: 3em;
-    font-weight: 700;
-}
-
-.wrapper{
-    /* width: 100%; */
-    /* max-width: 1440px; */
 }
 .hero{
     display: flex;
