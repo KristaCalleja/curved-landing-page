@@ -92,25 +92,24 @@ h1:first-of-type{
     margin: 55px 0;
     align-items: center;
 }
-
 .split h2{
     margin: -20px 0;
     font-size: 77px;
 }
-
 .split p{
     color: gray;
 }
 
-.container:first-child{
+/* Alternate layout */
+.alterate-layout{
     /* position: absolute; */
     border: 1px red solid;
 }
-
 .grid-boxes{
     display:flex;
     flex-direction: column;
 }
+
 .box{
     display: flex;
     flex-direction: row;
@@ -119,7 +118,7 @@ h1:first-of-type{
     padding: 20px 35px;
 }
 
-.grid-boxes div:nth-child(2n){
+.box-shaded{
     background: hsl(207, 100%, 98%);
 }
 
