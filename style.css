@@ -23,8 +23,8 @@ ul, li a{
     /* items are aligned such as their baselines align */
     align-items: baseline;
 }
-
-a{
+/* Use only-child selector */
+a:only-child{
     border:2px hsl(322, 100%, 66%) solid;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
     border-radius: 27px;
@@ -34,6 +34,11 @@ a{
     color: hsl(322, 100%, 66%);
     float: right;
     letter-spacing: .09em;
+}
+
+a:only-child:hover{
+    border: 2px hsl(321, 100%, 78%) solid;
+    color: hsl(321, 100%, 78%);
 }
 
 h1{
