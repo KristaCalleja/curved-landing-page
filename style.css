@@ -125,21 +125,26 @@ h1:first-of-type{
 }
 
 
-footer{
-    margin: auto;
-}
-.flexbox{
+/* Footbar */
+.footbar{
+    padding: 150px 140px;
     background-color: hsl(192, 100%, 9%);
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
 }
-
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+/* Descendant selector */
+.footbar p{
+    width: 320px;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+/* First child in a container */
+h3:first-child{
+    text-transform: uppercase;
+}
+/* Filter inverts the samples in the image.  */
+.left-scene img{
+    filter: invert(100%);
 }
 
 @media (max-width: 375px){
