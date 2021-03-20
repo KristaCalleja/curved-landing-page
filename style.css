@@ -12,13 +12,14 @@ ul, li a{
 }
 .wrapper{
     border: 2px red dotted;
-    width: min(90%, 70.5rem);
+    width: 90%;
+    /* Add margin auto to center wrapper in its width */
+    margin: 0 auto;
 }
 h1, h2, h3{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
-
 p{
     font-family: 'Open Sans', sans-serif;
 }
