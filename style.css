@@ -124,17 +124,17 @@ h1:first-of-type{
     width: 100%;
 }
 
-
 /* Footbar */
-.footbar div{
+.footbar, .links{
     background-color: hsl(192, 100%, 9%);
 }
+
 .footbar{
     padding: 150px 140px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    /* color: white; */
+    color: white;
 }
 /* Descendant selector */
 .footbar p{
@@ -148,14 +148,32 @@ h3:first-child{
 .left-scene img{
     filter: invert(100%);
 }
+input:only-of-type{
+    height: 44px;
+    width: 300px;
+    border-radius: 6px;
+    border: none;
+}
+button{
+    background: hsl(322, 100%, 66%);
+    border-radius: 6px;
+    border: 1px hsl(322, 100%, 66%) solid;
+    color: white;
+    padding: 13px 25px;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
 /* Links */
 .links ul{
-   display:flex;
-   flex-direction: row;
+    border: 1px white solid;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .links i{
-    font-size: 24px;
-
+    font-size: 38px;
 }
 
 @media (max-width: 375px){
