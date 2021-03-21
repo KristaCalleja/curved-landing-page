@@ -1,5 +1,3 @@
-# Frontend Mentor - Huddle landing page with curved sections
-
-![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)
-
-
+Mockup of a landing page using curves between sections.
+The following screenshots illustrate planning of sections, as a sample of my work.
+Visit webpage to see desktop and mobile versions.
