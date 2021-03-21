@@ -126,13 +126,15 @@ h1:first-of-type{
 
 
 /* Footbar */
+.footbar div{
+    background-color: hsl(192, 100%, 9%);
+}
 .footbar{
     padding: 150px 140px;
-    background-color: hsl(192, 100%, 9%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    color: white;
+    /* color: white; */
 }
 /* Descendant selector */
 .footbar p{
@@ -145,6 +147,15 @@ h3:first-child{
 /* Filter inverts the samples in the image.  */
 .left-scene img{
     filter: invert(100%);
+}
+/* Links */
+.links ul{
+   display:flex;
+   flex-direction: row;
+}
+.links i{
+    font-size: 24px;
+
 }
 
 @media (max-width: 375px){
