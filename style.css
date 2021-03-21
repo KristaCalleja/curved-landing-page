@@ -80,6 +80,9 @@ h1:first-of-type{
     box-shadow: 3px 5px 2px -2px rgba(0, 0, 0, 0.3);
     border-radius: 60px;
 }
+.cta:hover{
+    background-color: hsl(321, 100%, 78%);
+}
 .hero > img{
     /* margin-top: 6em; */
     width: 80%;
@@ -153,6 +156,14 @@ input:only-of-type{
     width: 300px;
     border-radius: 6px;
     border: none;
+    font-size: 22px;
+}
+input:focus{
+    cursor: pointer;
+    outline: none;
+}
+input:required{
+    border: 1px red solid;
 }
 button{
     background: hsl(322, 100%, 66%);
@@ -164,6 +175,11 @@ button{
     font-size: 14px;
     font-weight: 600;
 }
+button:hover{
+    background-color: hsl(321, 100%, 78%);
+    border: 1px hsl(321, 100%, 78%) solid;
+    cursor: pointer;
+}
 /* Links */
 .links ul{
     border: 1px white solid;
@@ -174,6 +190,10 @@ button{
 }
 .links i{
     font-size: 38px;
+}
+i:only-of-type:hover{
+    color: hsl(207, 100%, 98%);
+    cursor: pointer;
 }
 
 @media (max-width: 375px){
