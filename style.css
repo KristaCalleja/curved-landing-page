@@ -1,6 +1,6 @@
 /* Setting custom properties */
 body {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@ ul, li, a{
     text-decoration: none;
 }
 .wrapper{
-    border: 2px red dotted;
+    /* border: 2px red dotted; */
     width: 90%;
     /* Add margin auto to center wrapper in its width */
     margin: 0 auto;
@@ -35,7 +35,6 @@ p,a{
     align-items: center;
 }
 .logo {
-    border: 1px red solid;
     /* Ideal width */
     flex-basis: 200px;
     flex-shrink: 20;
@@ -129,7 +128,7 @@ h1:first-of-type{
     flex-direction:column;
 }
 .box{
-    border: 1px purple solid;
+    /* border: 1px purple solid; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -140,7 +139,7 @@ h1:first-of-type{
     background: hsl(207, 100%, 98%);
 }
 .box-text{
-    border: 1px violet solid;
+    /* border: 1px violet solid; */
     padding: 210px 80px;
 }
 .box-illustration img{
