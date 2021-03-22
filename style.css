@@ -63,29 +63,35 @@ a:only-child:hover{
 
 /* Hero section and CTA */
 .hero{
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     display: flex;
     flex-direction: column;
     /* Align-items over justify-content. Items are centered in the cross-axis */
     align-items: center;
     text-align: center;
-    padding: 0 60px;
+    /* padding: 0 60px; */
     margin: 240px 0 120px 0;
 }
 /* Select elements that are first of a type inside a container */
 h1:first-of-type{
-    font-size: 48px;
+    font-size: 38px;
 }
 /* Select p element which is direct child of div */
 .hero > p{
-    border: 1px green solid;
-    margin: 0 289px;
-    font-size: 18px;
+    /* border: 1px green solid; */
+    /* flex-basis: 150px; */
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0 400px;
     line-height: 1.7em;
 }
 .cta{
     margin: 50px 0;
-    padding: 30px 97px;
+    /* flex-basis: 150px; */
+    font-size: 12px;
+    flex-shrink: 1;
+    padding: 15px 55px;
     font-weight: 600;
     color: white;
     background-color: hsl(322, 100%, 66%);
@@ -96,7 +102,7 @@ h1:first-of-type{
     background-color: hsl(321, 100%, 78%);
 }
 .hero > img{
-    /* margin-top: 6em; */
+    margin-top: 6em;
     width: 80%;
 }
 /* Split image */
@@ -104,12 +110,14 @@ h1:first-of-type{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 55px 0;
     align-items: center;
+    align-content: center;
+    margin: 55px 0;
 }
 .split h2{
     margin: -20px 0;
     font-size: 77px;
+    margin-top: 15px;
 }
 .split p{
     color: gray;
@@ -210,13 +218,31 @@ i:only-of-type:hover{
     cursor: pointer;
 }
 
-@media (max-width: 375px){
+@media (max-width: 600px){
     .navbar{
         justify-content: space-between;
     }
+    h1:first-of-type{
+        font-size: 28px;
+    }
+    .hero > p{
+        padding: 0;
+    }
+    .cta{
+        /* margin: 50px 0; */
+        /* flex-basis: 150px; */
+        font-size: 12px;
+        flex-shrink: 1;
+        padding: 9px 45px;
+    }
+    .hero > img{
+        width: 100%;
+    }
     .split{
         flex-direction: column;
+        grid-gap: 4em;
     }
+
     .box{
         flex-direction: column;
         padding: 0;
