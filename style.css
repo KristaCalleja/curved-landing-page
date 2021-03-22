@@ -25,21 +25,33 @@ p,a{
 /* Navbar */
 .navbar{
     border: 1px black solid;
-    padding: 50px 40px;
+    /* padding: 25px 40px; */
     display:flex;
+    flex-wrap: nowrap;
     /* items evenly distributed; the first line is at the start of the container while the last one is at the end */
-    justify-content: space-between;
+    justify-content: space-around;
     /* items are aligned such as their baselines align */
-    align-items: baseline;
+    align-content: center;
+    align-items: center;
+}
+.logo {
+    border: 1px red solid;
+    /* Ideal width */
+    flex-basis: 200px;
+    flex-shrink: 20;
+    flex-grow: 0;
 }
 /* Use only-child selector */
 a:only-child{
+    flex-basis: 200px;
+    flex-shrink: 1;
+    flex-grow: 0;
     border:2px hsl(322, 100%, 66%) solid;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
     border-radius: 27px;
     padding: 12px 55px;
     background: none;
-    font-size: 23px;
+    font-size: 16px;
     color: hsl(322, 100%, 66%);
     float: right;
     letter-spacing: .09em;
@@ -199,10 +211,7 @@ i:only-of-type:hover{
 
 @media (max-width: 375px){
     .navbar{
-        width: min(90%, 70.5rem);
-    }
-    .navbar a{
-        padding: 20px 5px;
+        justify-content: space-between;
     }
     .split{
         flex-direction: column;
