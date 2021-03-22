@@ -70,6 +70,7 @@ a:only-child:hover{
     align-items: center;
     text-align: center;
     padding: 0 60px;
+    margin: 240px 0 120px 0;
 }
 /* Select elements that are first of a type inside a container */
 h1:first-of-type{
