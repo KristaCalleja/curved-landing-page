@@ -1,19 +1,4 @@
-// Using the .getComputedStyle() method and passing the pseudo-element selector as second arguments, allows one to access pseudo-elements. However this is read-only, and I intended to set the class through it, so it wouldnt be useful.
-// const sectionBeforePseudoElement = CSSStyleSheet('section');
-// const section = document.getElementsByClassName('section::before')[0].className += 'pseudo-elements';
-// var section = window.getComputedStyle(document.querySelector('section', '::before')).getPropertyValue('content');
-// console.log(typeof section);
-// section.classList.add('pseudo-element');
-// console.log(typeof section); // it is an object
-// console.dir(section);
-// var sectionWidth = section.getPropertyValue('width');
-// console.log(typeof sectionWidth); // it is a string
-// console.log(sectionWidth);
-// function addStyleOnPseudoElements(rules){
-//     var div = document.createElement('div');
-//     document.styleSheets[1].addRule('section:before', 'content:url(images/bg-section-top-mobile-1.svg)').classList.add('pseudo-element');
-
-// }
+/*jshint esversion: 6 */
 
 // Put all images in an array
 const  imageArray = new Array();
