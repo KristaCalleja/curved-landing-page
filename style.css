@@ -1,259 +1,189 @@
-/* Setting custom properties */
-body {
-    /* border: 1px red solid; */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+    font-size: 15px;
 }
-ul, li, a{
-    list-style: none;
-    text-decoration: none;
-}
-.wrapper{
-    /* border: 2px red dotted; */
-    width: 90%;
-    /* Add margin auto to center wrapper in its width */
-    margin: 0 auto;
-}
-h1, h2, h3{
+h1,h3{
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
 }
-p,a{
+h2,p,a{
     font-family: 'Open Sans', sans-serif;
 }
-/* Navbar */
-.navbar{
-    /* border: 1px black solid; */
-    display:flex;
-    padding: 25px 40px;
-    /* items evenly distributed; the first line is at the start of the container while the last one is at the end */
-    justify-content: space-around;
-    /* items are aligned such as their baselines align */
-    align-content: center;
+a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+h1:only-of-type{
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+p{
+    font-size: clamp(.8rem, 5vw, 1.1rem);
+}
+body {
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-.logo {
-    /* Ideal width flex-grow, flex-shrink and flex-basis*/
-    flex: 0 1 200px;
-    display: block;
-    max-width: 50%;
-}
-.navbar > .btn{
-    flex: 0 0 auto;
-    margin-left: auto;
+    padding: 3em 0;
+    margin-bottom: 4em;
 }
 .btn{
     border-radius: 27px;
-    background: none;
-    font-size: 0.875rem;
-    color: hsl(322, 100%, 66%);
+    color: var(--pink);
     padding: 0.5em 1.5em;
     letter-spacing: .09em;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
-    border:2px hsl(322, 100%, 66%) solid;
+    border: 2px var(--pink) solid;
+    cursor: pointer;
 }
 .btn:hover{
-    border: 2px hsl(321, 100%, 78%) solid;
-    color: hsl(321, 100%, 78%);
+    border: 2px var(--light-pink) solid;
+    color: var(--light-pink);
 }
-
-/* Hero section and CTA */
-.hero{
-    /* border: 1px blue solid; */
-    display: flex;
-    flex-direction: column;
-    /* Align-items over justify-content. Items are centered in the cross-axis */
-    align-items: center;
+.banner{
     text-align: center;
-    /* padding: 0 60px; */
-    margin: 240px 0 120px 0;
+    padding: 3em 2em;
 }
-/* Select elements that are first of a type inside a container */
-h1:first-of-type{
-    font-size: 38px;
-}
-/* Select p element which is direct child of div */
-.hero > p{
-    /* border: 1px green solid; */
-    /* flex-basis: 150px; */
-    flex-shrink: 1;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    padding: 0 400px;
+.banner > p{
     line-height: 1.7em;
+    margin: 2em 0 3.5em;
 }
 .cta{
-    margin: 50px 0;
-    /* flex-basis: 150px; */
-    font-size: 12px;
-    flex-shrink: 1;
-    padding: 15px 55px;
+    padding: 1em 4.6em;
     font-weight: 600;
     color: white;
-    background-color: hsl(322, 100%, 66%);
+    background-color: var(--pink);
     box-shadow: 3px 5px 2px -2px rgba(0, 0, 0, 0.3);
     border-radius: 60px;
+    cursor: pointer;
 }
 .cta:hover{
-    background-color: hsl(321, 100%, 78%);
+    background-color: var(--light-pink);
 }
-.hero > img{
-    margin-top: 6em;
-    width: 80%;
-}
-/* Split image */
 .split{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    margin: 55px 0;
+    flex-direction: column;
+    gap: 5em;
+    padding: 6em;
+    margin: auto;
 }
 .split h2{
-    margin: -20px 0;
-    font-size: 77px;
-    margin-top: 15px;
+    font-size: 4em;
+    margin: auto 0 -15px;
 }
-.split p{
-    color: gray;
+section div{
+    padding: 5em 1em;
+    text-align: center;
 }
-
-/* Alternate layout */
-.grid-boxes{
-    display:flex;
-    flex-direction:column;
+section div h3{
+    font-size: 1.85rem;
 }
-.box{
-    /* border: 1px purple solid; */
+.ribbon:nth-of-type(odd){
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 35px;
+    flex-direction: column-reverse;
+    background: var(--very-pale-blue);
 }
-.box-shaded{
-    background: hsl(207, 100%, 98%);
+.ribbon-1 div:first-of-type{
+    margin-top: -10px;
 }
-.box-text{
-    /* border: 1px violet solid; */
-    padding: 210px 80px;
+.ribbon img{
+    width: 90%;
 }
-.box-illustration img{
-    width: 100%;
-}
-
-/* Footbar */
-.footbar, .links{
-    background-color: hsl(192, 100%, 9%);
-}
-.footbar{
-    padding: 150px 140px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+.footer{
+    padding: 2.5em 3.5em;
+    background-color: var(--very-dark-cyan);
     color: white;
-    font-size: 14px;
     line-height: 1.9em;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
 }
-.top-scene{
-    order: 2;
-}
-/* Descendant selector */
-.footbar p{
-    width: 320px;
-}
-/* First child in a container */
-h3:first-child{
+.footer h2{
     text-transform: uppercase;
-}
-/* Filter inverts the samples in the image.  */
-.bottom-scene img{
-    filter: invert(100%);
+    font-size: 1.7rem;
 }
 input:only-of-type{
-    height: 44px;
-    width: 300px;
+    min-width: 50%;
+    padding: .6em;
     border-radius: 6px;
     border: none;
-    font-size: 22px;
+    font-size: 1.4rem;
 }
 input:focus{
-    cursor: pointer;
     outline: none;
-    border: 1px red solid;
+    border: 1px var(--light-red) solid;
+}
+.footer img, .links i{
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(63deg) brightness(106%) contrast(101%);
 }
 button{
-    background: hsl(322, 100%, 66%);
+    float: right;
+    background: var(--pink);
     border-radius: 6px;
-    border: 1px hsl(322, 100%, 66%) solid;
+    border: 1px var(--pink) solid;
     color: white;
-    padding: 15px 25px;
-    margin-left: 15px;
-    font-size: 14px;
+    padding: 1em 2.5em;
+    font-size: 18px;
     font-weight: 600;
 }
 button:hover{
-    background-color: hsl(321, 100%, 78%);
-    border: 1px hsl(321, 100%, 78%) solid;
+    background-color: var(--light-pink);
+    border: 1px var(--light-pink) solid;
     cursor: pointer;
-}
-/* Links */
-.links ul{
-    /* border: 1px white solid; */
-    width: 250px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 .links i{
-    font-size: 32px;
+    font-size: 2.13rem;
 }
 i:only-of-type:hover{
-    color: hsl(207, 100%, 98%);
+    color: var(--very-pale-blue);
     cursor: pointer;
 }
-
-@media (max-width: 600px){
-    
-    h1:first-of-type{
-        font-size: 28px;
+@media (min-width: 900px){
+    nav{
+        padding: 3em 2.5em;
     }
-    .hero > p{
-        padding: 0;
-    }
-    .cta{
-        /* margin: 50px 0; */
-        /* flex-basis: 150px; */
-        font-size: 12px;
-        flex-shrink: 1;
-        padding: 9px 45px;
-    }
-    .hero > img{
-        width: 100%;
+    .banner > p{
+        max-width: 500px;
+        margin: 0 auto 6em;
     }
     .split{
-        flex-direction: column;
-        grid-gap: 4em;
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
-    .box{
-        flex-direction: column;
-        padding: 0;
+    section div{
+        text-align: left;
     }
-    .box-text{
-        order: 1;
+    .ribbon:nth-of-type(odd){
+        flex-direction: row;
     }
-    .footbar{
-        padding: 20px;
-        grid-template-columns: 1fr;
+    .ribbon-2{
+        display: flex;
     }
-    .bottom-scene{
-        order: 2;
+    .footer{
+        flex-direction: row;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
-    button{
-        margin: 8px 15px;
-        float: right;
+    .footer div{
+        max-width: 450px;
+    }
+    form{
+        display: flex;
+        gap: 2.6em;
     }
 }
