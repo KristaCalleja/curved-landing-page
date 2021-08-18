@@ -16,8 +16,6 @@
 // }
 
 // Put all images in an array
-// Since some images are to be changed, depending on whether they are for desktop or mobile, each pair have to have a if...else statement.
-// Apply overflow:hidden and display:flex on these.
 const  imageArray = new Array();
 imageArray[0] = new Image();
 imageArray[0].src  = 'images/bg-footer-top-desktop.svg';
