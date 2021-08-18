@@ -101,6 +101,7 @@ section div h3{
     margin-top: -10px;
 }
 .ribbon img{
+    min-width: 450px;
     width: 90%;
 }
 .footer{
@@ -166,6 +167,7 @@ i:only-of-type:hover{
         justify-content: space-between;
     }
     section div{
+        min-width: 450px;
         text-align: left;
     }
     .ribbon:nth-of-type(odd){
