@@ -16,7 +16,6 @@ const imageArray = ['images/bg-footer-top-desktop.svg', // [0]
 // Set media query
 const isMobile = navigator.userAgent.mobile;
 
-
 // Select the doms where the pseudo-elements need to be rendered
 function footerEl(){
     if (!isMobile){ // true to 'desktop'
@@ -29,6 +28,7 @@ function footerEl(){
         document.styleSheets[1].addRule('footer::before', 'overflow:hidden');
     }
 };
+
 // Attached to section div
 function topSectionEl(){
     if (!isMobile){
@@ -41,6 +41,7 @@ function topSectionEl(){
         document.styleSheets[1].addRule('section::before', 'overflow:hidden');
     }
 };
+
 function bottomSectionEl(){
     if (!isMobile){
         document.styleSheets[1].addRule('section::after', `content:url('${imageArray[3]}');`);
@@ -52,6 +53,7 @@ function bottomSectionEl(){
         document.styleSheets[1].addRule('section::after', 'overflow:hidden');
     }
 };
+
 // Attached to last ribbon
 function topRibbonEl(){
     if (!isMobile){
@@ -64,6 +66,7 @@ function topRibbonEl(){
         document.styleSheets[1].addRule('.ribbon::before', 'overflow:hidden');
     }
 };
+
 // Attached to first ribbon
 function bottomRibbonEl(){
     if (!isMobile){
