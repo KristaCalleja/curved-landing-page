@@ -25,7 +25,7 @@ p{
 body {
     box-sizing: border-box;
     padding: 0;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 .wrapper{
     max-width: 1400px;
